@@ -1,0 +1,109 @@
+/* Global Values */ 
+body { padding-top: 70px; }
+
+/* Custom CSS for Colored Panels */
+.huge {
+    font-size: 25px;
+}
+
+.lg-icon {
+    font-size: 35px;
+}
+
+.panel-green {
+    border-color: #009933;
+}
+
+.panel-green > .panel-heading {
+    border-color: #009933;
+    color: #fff;
+    background-color: #009933;
+}
+
+.panel-green > a {
+    color: #009933;
+}
+
+.panel-green > a:hover {
+    color: #3d8b3d;
+}
+
+.panel-gray {
+    border-color: #b3b3cc;
+}
+
+.panel-gray > .panel-heading {
+    border-color: #b3b3cc;
+    color: #fff;
+    background-color: #b3b3cc;
+}
+
+.panel-gray > a {
+    color: #b3b3cc;
+}
+
+.panel-gray > a:hover {
+    color: #9494b8;
+}
+
+.panel-red {
+    border-color: #d9534f;
+}
+
+.panel-red > .panel-heading {
+    border-color: #d9534f;
+    color: #fff;
+    background-color: #d9534f;
+}
+
+.panel-red > a {
+    color: #d9534f;
+}
+
+.panel-red > a:hover {
+    color: #b52b27;
+}
+
+.panel-yellow {
+    border-color: #f0ad4e;
+}
+
+.panel-yellow > .panel-heading {
+    border-color: #f0ad4e;
+    color: #fff;
+    background-color: #f0ad4e;
+}
+
+.panel-yellow > a {
+    color: #f0ad4e;
+}
+
+.panel-yellow > a:hover {
+    color: #df8a13;
+}
+
+/* Custom CSS for Map Panel */
+.map {
+    border-color: #b3b3cc;
+    color: #fff;
+    background-color: #b3b3cc;
+}
+
+/* Custom CSS For Event Scroll Box */
+.table-fixed thead {
+  width: 97%;
+}
+.table-fixed tbody {
+  height: 230px;
+  overflow-y: auto;
+  width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  float: left;
+  border-bottom-width: 0;
+}
+
+

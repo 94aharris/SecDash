@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <!-- #The Below two are needed to retrive bootstrap from the CDN (not included in the package) -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        
+        <!-- Custom Style Sheet -->
+        <link rel="stylesheet" href="css/resd-custom.css">
+        
+        <meta charset="utf-8" />
+        <title>Dashboard</title>
+    </head>
+    
+    
+    <body>
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">RESD</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="sites.html">Sites<span class="sr-only">(current)</span></a></li>
+            <li><a href=#>Events</a></li>
+            <li><a href=#>Info Feed</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+    <!-- Main Page Content -->
+    <div class="wrapper container">
+        
+        <!-- Alert Boxes -->
+        <div class="row">
+        <div class="col-lg-4 col-md-6">
+            <div class="panel panel-gray">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <div class="lg-icon">
+                                <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <!-- Need to set value with some function -->
+                            <div class="huge">##</div>
+                            <div>Disconnected Sites</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">
+                    <div class="panel-footer">
+                        <span class="pull-left">View Details</span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="panel panel-yellow">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <div class="lg-icon">
+                                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <!-- Need to set value with some function -->
+                            <div class="huge">##</div>
+                            <div>New Warnings</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">
+                    <div class="panel-footer">
+                        <span class="pull-left">View Details</span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="panel panel-red">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <div class="lg-icon">
+                                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <!-- Need to set value with some function -->
+                            <div class="huge">##</div>
+                            <div>New Criticals</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">
+                    <div class="panel-footer">
+                        <span class="pull-left">View Details</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- End Alert Boxes -->
+    </div>
+        
+    <!-- World Map -->
+    <div class ="container">
+    <div class="col-lg-6">
+        <div class="map">
+            <h1>Site Maps Here</h1>
+            <p>Need to display world map and put hot spot data</p>
+            <!-- Possible
+            http://freehtml5maps.com/free-html5-world-map-with-panzoom/
+            http://www.anychart.com/products/anymap/docs/
+            -->
+        </div>
+    </div>
+    <!-- End World Map -->
+    
+    <!-- Site Events List -->
+    <!-- Pull data and probably redesign like this https://datatables.net/examples/styling/bootstrap.html -->
+    <div class="col-lg-6">
+    <div class="row">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>
+            Recent Site Events (Pull Data Here)
+          </h4>
+        </div>
+        <table class="table table-fixed table-hover">
+          <thead>
+            <tr>
+              <th class="col-xs-2">Site</th><th class="col-xs-4">Event</th><th class="col-xs-2">Type</th><th class="col-xs-4">Datetime</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="danger">
+              <td class="col-xs-2">Example</td><td class="col-xs-4">Intrusion</td><td class="col-xs-2">Critical</td><td class="col-xs-4">12-18-2016 12:32:22 EST</td>
+            </tr>
+            <tr class="warning">
+              <td class="col-xs-2">Example</td><td class="col-xs-4">Suspicious</td><td class="col-xs-2">Warning</td><td class="col-xs-4">12-18-2016 12:32:22 EST</td>
+            </tr>
+            <tr class="info">
+              <td class="col-xs-2">Example</td><td class="col-xs-4">Management</td><td class="col-xs-2">Info</td><td class="col-xs-4">12-18-2016 12:32:22 EST</td>
+            </tr>
+            <tr class="danger">
+              <td class="col-xs-2">Example</td><td class="col-xs-4">Intrusion</td><td class="col-xs-2">Critical</td><td class="col-xs-4">12-18-2016 12:32:22 EST</td>
+            </tr>
+            <tr class="warning">
+              <td class="col-xs-2">Example</td><td class="col-xs-4">Suspicious</td><td class="col-xs-2">Warning</td><td class="col-xs-4">12-18-2016 12:32:22 EST</td>
+            </tr>
+            <tr class="info">
+              <td class="col-xs-2">Example</td><td class="col-xs-4">Management</td><td class="col-xs-2">Info</td><td class="col-xs-4">12-18-2016 12:32:22 EST</td>
+            </tr>
+            <tr class="danger">
+              <td class="col-xs-2">Example</td><td class="col-xs-4">Intrusion</td><td class="col-xs-2">Critical</td><td class="col-xs-4">12-18-2016 12:32:22 EST</td>
+            </tr>
+            <tr class="warning">
+              <td class="col-xs-2">Example</td><td class="col-xs-4">Suspicious</td><td class="col-xs-2">Warning</td><td class="col-xs-4">12-18-2016 12:32:22 EST</td>
+            </tr>
+            <tr class="info">
+              <td class="col-xs-2">Example</td><td class="col-xs-4">Management</td><td class="col-xs-2">Info</td><td class="col-xs-4">12-18-2016 12:32:22 EST</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+      </div>
+    </div>
+    <!-- End Site Events List-->
+    
+    </body>
+</html>
